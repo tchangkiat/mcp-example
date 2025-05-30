@@ -2,11 +2,11 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 
 const API_BASE = "https://api-open.data.gov.sg/v2/real-time/api/air-temperature";
-const USER_AGENT = "singapore-weather-app/1.0";
+const USER_AGENT = "singapore-temperature-app/1.0";
 
 // Create server instance
 const server = new McpServer({
-    name: "singapore-weather",
+    name: "singapore-temperature",
     version: "1.0.0",
     capabilities: {
         resources: {},
@@ -53,7 +53,7 @@ interface WeatherDataResponse {
 
 // Register weather tools
 server.tool(
-    "get-singapore-weather",
+    "get-singapore-temperature",
     "Get weather for Singapore",
     async () => {
         // Get weather data

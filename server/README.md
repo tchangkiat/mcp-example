@@ -16,7 +16,7 @@ npm run build
 ```json
 {
     "mcpServers": {
-        "singapore-weather": {
+        "singapore-temperature": {
             "command": "node",
             "args": [
                 "/<Path to root folder of the source code>/server/build/index.js"
@@ -39,7 +39,7 @@ docker build -t mcp-server-example .
 ```json
 {
     "mcpServers": {
-        "singapore-weather": {
+        "singapore-temperature": {
             "command": "docker",
             "args": [
                 "run",
