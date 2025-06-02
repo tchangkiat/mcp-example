@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "bin": {
-    "singapore-temperature": "./build/index.js"
+    "singapore-weather": "./build/index.js"
   },
   "scripts": {
     "build": "tsc && chmod 755 build/index.js"
