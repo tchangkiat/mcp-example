@@ -7,5 +7,7 @@
 Run the following command in the root folder:
 
 ```bash
-sh demo.sh
+sh build.sh
+
+sh run.sh
 ```

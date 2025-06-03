@@ -1,0 +1,1 @@
+node client/build/index.js server/build/index.js
